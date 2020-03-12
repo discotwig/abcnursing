@@ -1,0 +1,37 @@
+﻿<%@ Master Language="VB" CodeFile="ABCNursingMasterPage.master.vb" Inherits="ABCNursingMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/abcnursing_css.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>
+            <img src="image/logo.png" />
+            <aside>
+                <p>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="88px"></asp:TextBox>
+                    <asp:Button ID="Button1" runat="server" Height="20px" Text="Button" Width="17px" />
+&nbsp;|
+                <a href="Login.aspx">Log in</a>
+                    </p>
+            </aside>
+            <div id="nav">
+                <a href="Default.aspx">Home</a>
+                <a href="Events.aspx">Events</a>
+                <a href="Analytics.aspx">Analytics</a>
+                <a href="Learn.aspx">Learn</a>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
