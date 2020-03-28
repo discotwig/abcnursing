@@ -1,4 +1,19 @@
-﻿header img {
+﻿*{
+    margin: 0;
+    font-family: Aharoni, Arial;
+}
+
+body {
+    background-color:#f1f1f1
+}
+
+header {
+    background-color: lightpink;
+    height: 130px;
+}
+
+header img {
+    margin-top: 20px;
     float: left;
     width: 350px;
     height: 100px;
@@ -9,7 +24,7 @@
 header aside {
     float: right;
     position: relative;
-    top: 0;
+    top: 5%;
     margin-right: 10px;
 }
 
@@ -20,6 +35,7 @@ header aside {
 }
 
 #nav a{
+    margin-top:20px;
     float:left;
     display:block;
     text-align:center;
@@ -37,34 +53,47 @@ header aside {
     color: black;
 }
 
-.sidenav{
+main {
+    margin: 15px;
+}
+
+.slide {
     height: 100%;
-    width: 150px;
+    width: 0;
     position: fixed;
     z-index: 1;
-    top:0;
+    top: 130px;
     right: 0;
-    background-color: gold;
-    overflow-x: hidden;
+    background-color: rgba(224, 224, 224, 0.79);
+    overflow: hidden;
+    transition: 0.5s;
     padding-top: 60px;
 }
 
-.sidenav a {
+.slide a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: white;
+    display: block;
     transition: 0.3s;
 }
 
-.sidnav a:hover {
-    text-decoration: underline black;
+.slide a:hover {
+    color: black;
 }
 
-.sidenav .closebtn {
+.slide .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 38px;
+    font-size: 36px;
     margin-left: 50px;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: dashed black;
 }
