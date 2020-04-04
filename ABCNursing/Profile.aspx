@@ -56,7 +56,7 @@
                 <asp:Parameter Name="Original_MotherID" Type="Int32" />
             </UpdateParameters>
         </asp:ObjectDataSource>
-        <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" DataKeyNames="BabyID" DataSourceID="ObjectDataSource2" Height="99px" Width="381px">
+        <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" DataKeyNames="BabyID" DataSourceID="ObjectDataSource2" Height="99px" Width="402px">
             <Fields>
                 <asp:BoundField DataField="BabyID" HeaderText="BabyID" ReadOnly="True" SortExpression="BabyID" />
                 <asp:BoundField DataField="First Name" HeaderText="First Name" SortExpression="First Name" />
