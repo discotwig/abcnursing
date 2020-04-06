@@ -11,9 +11,9 @@ Partial Class SignUp
             Using cmd As New SqlCommand("Insert_Users")
                 Using sda As New SqlDataAdapter
                     cmd.CommandType = CommandType.StoredProcedure
-                    cmd.Parameters.AddWithValue("@Username", tbUserName.Text.Trim())
-                    cmd.Parameters.AddWithValue("@Password", tbPassword.Text.Trim())
-                    cmd.Parameters.AddWithValue("@Email", tbEmail.Text.Trim)
+                    cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim())
+                    cmd.Parameters.AddWithValue("@Password", txtPass.Text.Trim())
+                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim)
                     cmd.Connection = con
                     con.Open()
                     userId = Convert.ToInt32(cmd.ExecuteScalar())
@@ -49,9 +49,9 @@ Partial Class SignUp
                 End Using
             End Using
         End Using
-        Using mm As New MailMessage("whatwearwhenhelp@gmail.com", tbEmail.Text)
+        Using mm As New MailMessage("whatwearwhenhelp@gmail.com", txtEmail.Text)
             mm.Subject = "What WEAR When Account Activation"
-            Dim body As String = "Hello " + tbUserName.Text.Trim() + ","
+            Dim body As String = "Hello " + txtUsername.Text.Trim() + ","
             body += "<br /><br />Thank you for choosing What WEAR When. Our goal is to make selecting "
             body += "your outfit for any occasion as stress free as possible."
             body += "<br />Please click the link below to activate your account."
