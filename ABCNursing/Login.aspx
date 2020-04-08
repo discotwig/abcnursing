@@ -8,6 +8,6 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <div class="container">
-        <asp:Login ID="Login1" runat="server" Height="164px" Width="486px" OnAuthenticate="ValidateUser"></asp:Login>
+        <asp:Login ID="Login1" runat="server" Height="164px" Width="486px" OnAuthenticate="Login1_Authenticate"></asp:Login>
     </div>
 </asp:Content>
