@@ -11,9 +11,9 @@ Partial Class SignUp
             Using cmd As New SqlCommand("Insert_Users")
                 Using sda As New SqlDataAdapter
                     cmd.CommandType = CommandType.StoredProcedure
-                    cmd.Parameters.AddWithValue("@Username", tbUserName.Text.Trim())
-                    cmd.Parameters.AddWithValue("@Password", tbPassword.Text.Trim())
-                    cmd.Parameters.AddWithValue("@Email", tbEmail.Text.Trim)
+                    cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim())
+                    cmd.Parameters.AddWithValue("@Password", txtPass.Text.Trim())
+                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim)
                     cmd.Connection = con
                     con.Open()
                     userId = Convert.ToInt32(cmd.ExecuteScalar())
