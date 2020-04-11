@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/ABCNursingMasterPage.master" AutoEventWireup="false" CodeFile="Addeditbaby.aspx.vb" Inherits="Addbaby" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 </asp:Content>
@@ -23,8 +28,8 @@
                 </td>
             </tr>
             <tr>
-                <td>Gender</td>
-                <td>
+                <td class="auto-style1">Gender</td>
+                <td class="auto-style1">
                     <asp:DropDownList ID="DropDownList1" runat="server">
                         <asp:ListItem Value="Choose"></asp:ListItem>
                         <asp:ListItem Value="Boy"></asp:ListItem>
