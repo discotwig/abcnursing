@@ -7,7 +7,7 @@
             margin-left: auto;
             margin-right: auto;
             border: dashed black;
-              height: 575px;
+              height: 724px;
           }
     </style>
 </asp:Content>
@@ -19,7 +19,7 @@
               Learn about different problems below:<br />
               <br />
               <asp:dropdownlist runat="server" DataSourceID="ObjectDataSource1" DataTextField="Name" DataValueField="Name" AutoPostBack="True" ID="DropDownlist1"></asp:dropdownlist>
-              <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetName" TypeName="DataSetTableAdapters.ProblemListTableAdapter">
+              <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetName" TypeName="DataSetTableAdapters.ProblemsListTableAdapter">
               </asp:ObjectDataSource>
               <asp:gridview runat="server" AutoGenerateColumns="False" DataKeyNames="ProblemID" DataSourceID="ObjectDataSource2" AllowPaging="True" AllowSorting="True" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None">
                   <AlternatingRowStyle BackColor="PaleGoldenrod" />
@@ -80,6 +80,8 @@
                       <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                       <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
                       <asp:BoundField DataField="Orinetation" HeaderText="Orinetation" SortExpression="Orinetation" />
+                      <asp:ImageField DataImageUrlField="Pic_Filename" HeaderText="Position Picture">
+                      </asp:ImageField>
                   </Columns>
                   <FooterStyle BackColor="Tan" />
                   <HeaderStyle BackColor="Tan" Font-Bold="True" />
