@@ -49,9 +49,9 @@ Partial Class SignUp
                 End Using
             End Using
         End Using
-        Using mm As New MailMessage("whatwearwhenhelp@gmail.com", tbEmail.Text)
+        Using mm As New MailMessage("whatwearwhenhelp@gmail.com", txtEmail.Text)
             mm.Subject = "What WEAR When Account Activation"
-            Dim body As String = "Hello " + tbUserName.Text.Trim() + ","
+            Dim body As String = "Hello " + txtUsername.Text.Trim() + ","
             body += "<br /><br />Thank you for choosing What WEAR When. Our goal is to make selecting "
             body += "your outfit for any occasion as stress free as possible."
             body += "<br />Please click the link below to activate your account."
