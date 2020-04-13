@@ -50,9 +50,24 @@
                 </td>
             </tr>
             <tr>
-                <td>Baby Pictu</td>
+                <td class="auto-style2">Baby Picture</td>
+                <td class="auto-style2">
+
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <br />
+
+                    </td>
             </tr>
-            
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style2">
+                    <br />
+                    <asp:Button ID="Button1" runat="server" Text="Button" />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    </td>
+            </tr>
         </table>
         <h1>&nbsp;</h1>
         <h1>Edit a Baby</h1>
