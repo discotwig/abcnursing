@@ -50,16 +50,7 @@
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Button ID="Button1" runat="server" Text="Button" />
-                </td>
-                <td>
-                    <asp:Button ID="Button2" runat="server" Text="Button" />
-                </td>
+                <td>Baby Pictu</td>
             </tr>
             
         </table>

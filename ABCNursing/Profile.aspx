@@ -26,37 +26,6 @@
                 <asp:HyperLinkField HeaderText="Edit a Baby" NavigateUrl="Addeditbaby.aspx" Text="Edit" />
             </Fields>
         </asp:DetailsView>
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.MotherTableAdapter" UpdateMethod="Update">
-            <DeleteParameters>
-                <asp:Parameter Name="Original_MotherID" Type="Int32" />
-            </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="MotherID" Type="Int32" />
-                <asp:Parameter Name="First_Name" Type="String" />
-                <asp:Parameter Name="Last_Name" Type="String" />
-                <asp:Parameter Name="DOB" Type="String" />
-                <asp:Parameter Name="Weight" Type="String" />
-                <asp:Parameter Name="City" Type="String" />
-                <asp:Parameter Name="State" Type="String" />
-                <asp:Parameter Name="Zipcode" Type="String" />
-                <asp:Parameter Name="Phone" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="BabyID" Type="String" />
-            </InsertParameters>
-            <UpdateParameters>
-                <asp:Parameter Name="First_Name" Type="String" />
-                <asp:Parameter Name="Last_Name" Type="String" />
-                <asp:Parameter Name="DOB" Type="String" />
-                <asp:Parameter Name="Weight" Type="String" />
-                <asp:Parameter Name="City" Type="String" />
-                <asp:Parameter Name="State" Type="String" />
-                <asp:Parameter Name="Zipcode" Type="String" />
-                <asp:Parameter Name="Phone" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="BabyID" Type="String" />
-                <asp:Parameter Name="Original_MotherID" Type="Int32" />
-            </UpdateParameters>
-        </asp:ObjectDataSource>
         <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" DataKeyNames="BabyID" DataSourceID="ObjectDataSource2" Height="99px" Width="402px">
             <Fields>
                 <asp:BoundField DataField="BabyID" HeaderText="BabyID" ReadOnly="True" SortExpression="BabyID" />
@@ -70,31 +39,6 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
-        <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.BabyTableAdapter" UpdateMethod="Update">
-            <DeleteParameters>
-                <asp:Parameter Name="Original_BabyID" Type="Int32" />
-            </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="BabyID" Type="Int32" />
-                <asp:Parameter Name="First_Name" Type="String" />
-                <asp:Parameter Name="Last_Name" Type="String" />
-                <asp:Parameter Name="Gender" Type="String" />
-                <asp:Parameter Name="DOB" Type="String" />
-                <asp:Parameter Name="Weight" Type="String" />
-                <asp:Parameter Name="Phone" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-            </InsertParameters>
-            <UpdateParameters>
-                <asp:Parameter Name="First_Name" Type="String" />
-                <asp:Parameter Name="Last_Name" Type="String" />
-                <asp:Parameter Name="Gender" Type="String" />
-                <asp:Parameter Name="DOB" Type="String" />
-                <asp:Parameter Name="Weight" Type="String" />
-                <asp:Parameter Name="Phone" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="Original_BabyID" Type="Int32" />
-            </UpdateParameters>
-        </asp:ObjectDataSource>
         <br />
         </div>
 &nbsp; 
