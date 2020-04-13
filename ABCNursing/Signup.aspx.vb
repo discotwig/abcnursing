@@ -7,7 +7,7 @@ Partial Class SignUp
     Inherits System.Web.UI.Page
     Protected Sub RegisterUser(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Dim userId As Integer = 0
-        Using con As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\WWWDatabase.mdf;Integrated Security=True")
+        Using con As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As New SqlCommand("Insert_Users")
                 Using sda As New SqlDataAdapter
                     cmd.CommandType = CommandType.StoredProcedure
@@ -31,13 +31,14 @@ Partial Class SignUp
                     SendActivationEmail(userId)
                     Exit Select
             End Select
-            ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert( ' ") & messege) + " ');", True)
+            ClientScript.RegisterStartupScript([GetType](), "alert",
+           (Convert.ToString("alert( ' ") & messege) + " ');", True)
         End Using
     End Sub
     Private Sub SendActivationEmail(userId As Integer)
         Dim activationCode As String = Guid.NewGuid().ToString()
-        Using con As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\WWWDatabase.mdf;Integrated Security=True")
-            Using cmd As New SqlCommand("INSERT INTO UserActivation VALUES(@UserId, @ActivationCode)")
+        Using con As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As New SqlCommand("INSERT INTO UserActivation VALUES(@UserId,@ActivationCode)")
                 Using sda As New SqlDataAdapter
                     cmd.CommandType = CommandType.Text
                     cmd.Parameters.AddWithValue("@UserId", userId)
@@ -58,8 +59,8 @@ Partial Class SignUp
             body += "<br />For security purposes the link will expire in 24 hours."
             body += "<br /><br />Thank you and welcome!"
             body += "<br />-What WEAR When Team"
-            body += "<br /><br /><a href = '" + Request.Url.GetLeftPart(UriPartial.Authority) +
-Page.ResolveUrl("~/Activation.aspx?ActivationCode=" & activationCode) + "'> Click here to activate your account!"
+            body += "<br /><br /><a href = '" +
+            Request.Url.GetLeftPart(UriPartial.Authority) + Page.ResolveUrl("~/Activation.aspx?ActivationCode=" & activationCode) + "'> Click here to activate your account!"
             mm.Body = body
             mm.IsBodyHtml = True
             Dim smtp As New SmtpClient()
