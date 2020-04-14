@@ -17,7 +17,7 @@
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
     </p>
-    <rsweb:ReportViewer ID="ReportViewer1" runat="server">
+    <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="100%">
     </rsweb:ReportViewer>
     <p>
         &nbsp;</p>
@@ -26,7 +26,7 @@
     </p>
 
     <asp:ScriptManager ID="ScriptManager2" runat="server"></asp:ScriptManager>
-    <rsweb:ReportViewer ID="ReportViewer2" runat="server">
+    <rsweb:ReportViewer ID="ReportViewer2" runat="server" Width="100%">
     </rsweb:ReportViewer>
 
 
