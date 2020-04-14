@@ -82,7 +82,7 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style3">Kihyup Yoon</td>
-            <td>&nbsp;</td>
+            <td>Kihyup Yoon is a senior at Kennesaw State University majoring in Information Systems and Management. He was born and raised in South Korea and came to the Untied States of America as an exchange student when he was a Junior at highschool. He loved his expereince and decided to the Kennesaw State University to obtain higher education. After graduation, Kihyup wants to become a business analysts. In the ABC Nursing project, he took a role as a web page developer.</td>
         </tr>
     </table>
     <p>

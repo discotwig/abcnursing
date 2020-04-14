@@ -24,6 +24,7 @@
                 <asp:BoundField DataField="BabyID" HeaderText="BabyID" SortExpression="BabyID" />
                 <asp:HyperLinkField HeaderText="New Baby" NavigateUrl="Addeditbaby.aspx" Text="Add" />
                 <asp:HyperLinkField HeaderText="Edit a Baby" NavigateUrl="Addeditbaby.aspx" Text="Edit" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.MotherTableAdapter" UpdateMethod="Update">
