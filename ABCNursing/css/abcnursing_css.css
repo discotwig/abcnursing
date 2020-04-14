@@ -97,3 +97,8 @@ main {
     margin-right: auto;
     border: dashed black;
 }
+
+.datatable {
+     width: 100%;
+     height: auto;
+}

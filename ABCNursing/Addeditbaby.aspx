@@ -3,9 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
         .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
             height: 23px;
         }
     </style>
@@ -17,7 +14,7 @@
         <h1>Add a baby</h1>
 
         <br />
-        <table class="auto-style1">
+        <table class="datatable">
             <tr>
                 <td>First Name</td>
                 <td>
@@ -31,10 +28,14 @@
                 </td>
             </tr>
             <tr>
-                <td>Gender</td>
-                <td>
+                <td class="auto-style1">Gender</td>
+                <td class="auto-style1">
                     <asp:DropDownList ID="DropDownList1" runat="server">
-                    </asp:DropDownList>
+                        <asp:ListItem Value="Choose"></asp:ListItem>
+                        <asp:ListItem Value="Boy"></asp:ListItem>
+                        <asp:ListItem Value="Girl"></asp:ListItem>
+                   
+                         </asp:DropDownList>
                 </td>
             </tr>
             <tr>
@@ -44,8 +45,8 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Weight</td>
-                <td class="auto-style2">
+                <td class="datatable">Weight</td>
+                <td class="datatable">
                     <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                 </td>
             </tr>
