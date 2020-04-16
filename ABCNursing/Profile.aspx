@@ -1,6 +1,14 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/ABCNursingMasterPage.master" AutoEventWireup="false" CodeFile="Profile.aspx.vb" Inherits="Profile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 54%;
+            margin-left: auto;
+            margin-right: auto;
+            border: dashed black;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>
@@ -8,7 +16,7 @@
         </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-    <div class="container">
+    <div class="auto-style1">
         <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="400px" AutoGenerateRows="False" DataKeyNames="MotherID" DataSourceID="ObjectDataSource1">
             <Fields>
                 <asp:BoundField DataField="MotherID" HeaderText="MotherID" ReadOnly="True" SortExpression="MotherID" />
@@ -24,6 +32,7 @@
                 <asp:BoundField DataField="BabyID" HeaderText="BabyID" SortExpression="BabyID" />
                 <asp:HyperLinkField HeaderText="New Baby" NavigateUrl="Addeditbaby.aspx" Text="Add" />
                 <asp:HyperLinkField HeaderText="Edit a Baby" NavigateUrl="Addeditbaby.aspx" Text="Edit" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.MotherTableAdapter" UpdateMethod="Update">

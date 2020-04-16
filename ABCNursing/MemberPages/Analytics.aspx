@@ -29,7 +29,7 @@
         <tr>
             <td class="auto-style2">Baby</td>
             <td class="auto-style3">
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="DropDownList8" runat="server" AutoPostBack="True">
                 </asp:DropDownList>
             </td>
             <td class="auto-style17"></td>
@@ -58,20 +58,24 @@
             </td>
             <td class="auto-style2">Mood</td>
             <td class="auto-style3">
-                <asp:DropDownList ID="DropDownList3" runat="server">
+                <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource3" DataTextField="Name" DataValueField="Name">
                 </asp:DropDownList>
+                <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetName" TypeName="DataSetTableAdapters.MoodListTableAdapter"></asp:ObjectDataSource>
             </td>
         </tr>
         <tr>
             <td class="auto-style2">Position</td>
             <td class="auto-style3">
-                <asp:DropDownList ID="DropDownList4" runat="server">
+                <asp:DropDownList ID="DropDownList4" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource1" DataTextField="Name" DataValueField="Name" Height="16px">
+                    <asp:ListItem Value="Choose"></asp:ListItem>
                 </asp:DropDownList>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetName" TypeName="DataSetTableAdapters.PositionListTableAdapter"></asp:ObjectDataSource>
             </td>
             <td class="auto-style2">Problems</td>
             <td class="auto-style3">
-                <asp:DropDownList ID="DropDownList5" runat="server">
+                <asp:DropDownList ID="DropDownList5" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource2" DataTextField="Name" DataValueField="Name">
                 </asp:DropDownList>
+                <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetName" TypeName="DataSetTableAdapters.ProblemListTableAdapter"></asp:ObjectDataSource>
             </td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style3">&nbsp;</td>
