@@ -31,7 +31,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
      
-    <table cellpadding="0" cellspacing="15" class="auto-style1">
+    <table class="auto-style1">
         <tr>
             <td>
                 <img src="image/Awareness.png" />
