@@ -7,5 +7,6 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+    <asp:Label ID="lblLogIn" runat="server" Text="Label"></asp:Label>
 </asp:Content>
 
