@@ -1,4 +1,5 @@
 ﻿<%@ Application Language="VB" %>
+<%@Import Namespace=" System.Security.Principal"%>
 
 <script runat="server">
 
@@ -35,7 +36,7 @@
                     ' Get the stored user-data, in this case, our roles
                     Dim userData As String = ticket.UserData
                     Dim roles As String() = userData.Split(","c)
-                    'HttpContext.Current.User = New GenericPrincipal(id, roles)
+                    HttpContext.Current.User = New GenericPrincipal(id, roles)
                 End If
             End If
         End If
