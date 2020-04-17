@@ -5,10 +5,8 @@ Partial Class Activation
     Inherits System.Web.UI.Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         If Not Me.IsPostBack Then
-            Dim constr As String =
-           ConfigurationManager.ConnectionStrings("WWWDataBase").ConnectionString
             Dim activationCode As String = If(Not String.IsNullOrEmpty(Request.QueryString("ActivationCode")), Request.QueryString("ActivationCode"), Guid.Empty.ToString())
-            Using con As New SqlConnection(constr)
+            Using con As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As New SqlCommand("DELETE FROM UserActivation WHERE ActivationCode = @ActivationCode")
                     Using sda As New SqlDataAdapter()
                         cmd.CommandType = CommandType.Text

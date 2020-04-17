@@ -22,11 +22,13 @@
                     </p>
                 </aside>
                 <div id="nav">
-                    <a href="Default.aspx">Home</a>
-                    <a href="Aboutus.aspx">About Us</a>
-                    <a href="Events.aspx">Events</a>
-                    <a href="Analytics.aspx">Analytics</a>
-                    <a href="Learn.aspx">Learn</a>
+                    <a href="/Default.aspx">Home</a>
+                    <a href="/Aboutus.aspx">About Us</a>
+                    <a href="/Learn.aspx">Learn</a>
+                    <!--Below links only show up if user is logged in-->
+                    <a href="/MemberPages/Events.aspx"><asp:Label ID="lblEvents" runat="server" Text=""></asp:Label></a>
+                    <a href="/MemberPages/Analytics.aspx"><asp:Label ID="lblAnalytics" runat="server" Text=""></asp:Label></a>
+                    
                 </div>
             </header>
             <main>
