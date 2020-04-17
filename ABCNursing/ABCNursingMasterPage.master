@@ -16,9 +16,9 @@
                 <img src="image/logo.png" />
                 <aside>
                     <p>
-                        <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
-                        <asp:Label ID="lblSignUp" runat="server" Text=""></asp:Label>
-                        <asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label>
+                        <a href="/Login.aspx"><asp:Label ID="lblUser" runat="server" Text=""></asp:Label></a>
+                        <a href="/Signup.aspx"><asp:Label ID="lblSignUp" runat="server" Text=""></asp:Label></a>
+                        <a href="/AdminPages/AdminUserProfile.aspx"><asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label></a>
                     </p>
                 </aside>
                 <div id="nav">
