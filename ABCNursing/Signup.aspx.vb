@@ -50,8 +50,8 @@ Partial Class SignUp
                 End Using
             End Using
         End Using
-        Using mm As New MailMessage("whatwearwhenhelp@gmail.com", txtEmail.Text)
-            mm.Subject = "What WEAR When Account Activation"
+        Using mm As New MailMessage("ABCNursingCapstone@gmail.com", txtEmail.Text)
+            mm.Subject = "ABCNursingCapstone@gmail.com Account Activation"
             Dim body As String = "Hello " + txtUsername.Text.Trim() + ","
             body += "<br /><br />Thank you for choosing ABCNursing!"
             body += " Our goal is to make tracking your nursing data stress free!"
