@@ -51,9 +51,12 @@
         </p>
     <table class="auto-style1">
         <tr>
-            <td class="auto-style4">Eman Abdulmahdi<br />
+            <td class="auto-style4">Eman Abdulmahdi</td>
+            <td class="auto-style5">
+                There are hundreds of web apps give breastfeeding and baby adive to new moms, but are they any good? 
+                Breast milk helps keep your baby health because of that creating this web application to help Eman, her sisters, and other women for breastfeeding guidance. 
+                This web application will help mom to have somthing to look back to whenever she needs help.
             </td>
-            <td class="auto-style5">There are hundreds of web apps give breastfeeding and baby adive to new moms, but are they any good?Breast milk helps keep your baby health because of that creating this web application to help me, my sisters, and other women for breastfeeding guidance. This web application will help mom to have somthing to look back to whenever they need the help. We tried to make it great websites full of useful and interesting information for moms. </td>
         </tr>
     </table>
     <p
@@ -62,10 +65,12 @@
         </p>
     <table class="auto-style6">
         <tr>
-            <td class="auto-style3">Jennifer Ashley
-                <br />
+            <td class="auto-style3">Jennifer Ashley</td>
+            <td>
+                Jennifer is a senior at Kennesaw State University majoring in Information Systems. She is a Georgia native who is a mother of three and a grandmother of two.
+                Her hobbes include exercise, sewing, reading, and keeping busy. This website is important to Jennifer because as someone who nursed before there was "an app for that",
+                she understands the frusterations that come with nursing. It is her hope that this website eases many of those frusterations and is a valuable to new families.
             </td>
-            <td>&nbsp;</td>
         </tr>
     </table>
     <p
@@ -74,7 +79,11 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style3">Ryan Bishop</td>
-            <td>&nbsp;</td>
+            <td>
+                A senior at Kennesaw State University and a Business Analyst intern at C.H. Robinson. Ryan aspires to be a Product Manager, and work his way to managing entire information divisions.
+                In his spare time, Ryan skateboards on private property and tinkers with old electronics - finding new applications for them.
+                He enjoys coding, and is totally the best at it, but likes working with people more. He hopes that his interests will make way for a fruitful and fulfilling career in Information Systems.
+            </td>
         </tr>
     </table>
     <p>
