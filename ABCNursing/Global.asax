@@ -27,6 +27,7 @@
 
         ' Below was pasted from Login_Global_file.docx
         ' Still needs to be retrofit
+
         If HttpContext.Current.User IsNot Nothing Then
             If HttpContext.Current.User.Identity.IsAuthenticated Then
                 If TypeOf HttpContext.Current.User.Identity Is FormsIdentity Then

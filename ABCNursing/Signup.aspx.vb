@@ -53,12 +53,12 @@ Partial Class SignUp
         Using mm As New MailMessage("whatwearwhenhelp@gmail.com", txtEmail.Text)
             mm.Subject = "What WEAR When Account Activation"
             Dim body As String = "Hello " + txtUsername.Text.Trim() + ","
-            body += "<br /><br />Thank you for choosing What WEAR When. Our goal is to make selecting "
-            body += "your outfit for any occasion as stress free as possible."
+            body += "<br /><br />Thank you for choosing ABCNursing!"
+            body += " Our goal is to make tracking your nursing data stress free!"
             body += "<br />Please click the link below to activate your account."
             body += "<br />For security purposes the link will expire in 24 hours."
             body += "<br /><br />Thank you and welcome!"
-            body += "<br />-What WEAR When Team"
+            body += "<br />-ABCNursing Team"
             body += "<br /><br /><a href = '" +
             Request.Url.GetLeftPart(UriPartial.Authority) + Page.ResolveUrl("~/Activation.aspx?ActivationCode=" & activationCode) + "'> Click here to activate your account!"
             mm.Body = body
@@ -67,8 +67,8 @@ Partial Class SignUp
             smtp.Host = "smtp.gmail.com"
             smtp.EnableSsl = True
             Dim NetworkCred As New System.Net.NetworkCredential()
-            NetworkCred.UserName = "whatwearwhenhelp@gmail.com"
-            NetworkCred.Password = "capstone1"
+            NetworkCred.UserName = "ABCNursingCapstone@gmail.com"
+            NetworkCred.Password = "abccap123!!"
             smtp.UseDefaultCredentials = True
             smtp.Credentials = NetworkCred
             smtp.Port = 587
