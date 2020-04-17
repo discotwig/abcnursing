@@ -71,17 +71,6 @@
             </tr>
         </table>
         <h1>&nbsp;</h1>
-        <h1>Edit a Baby</h1>
-        <p>Select baby to Edit</p>
-        <p>
-            <asp:DropDownList ID="DropDownList2" runat="server">
-            </asp:DropDownList>
-        </p>
-        <p>&nbsp;</p>
-        <p>
-            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px">
-            </asp:DetailsView>
-        </p>
 
     </div>
 </asp:Content>
