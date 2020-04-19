@@ -1,25 +1,24 @@
 ﻿<%@ Page Title="Events" Language="VB" MasterPageFile="~/ABCNursingMasterPage.master" AutoEventWireup="false" CodeFile="Events.aspx.vb" Inherits="Events" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <style type="text/css">
         .auto-style1 {
             width: 100%;
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1>
-        Event</h1>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <h1>Event</h1>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <div class="slide" id="slide">
-       <a href="javascript:void(0)" class="closebtn" onclick="closeSlide()">&times;</a>
-       <a href="javascript:void(0)" onclick="openAdd()">Add</a>
-       <a href="javascript:void(0)" onclick="openEdit()">Edit/Delete</a>
-   </div>   
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSlide()">&times;</a>
+        <a href="javascript:void(0)" onclick="openAdd()">Add</a>
+        <a href="javascript:void(0)" onclick="openEdit()">Edit/Delete</a>
+    </div>
 
     <div class="slide" id="add">
-       <a href="javascript:void(0)" class="closebtn" onclick="closeAdd()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAdd()">&times;</a>
 
         <table cellpadding="0" cellspacing="5" class="auto-style1">
             <tr>
@@ -80,15 +79,16 @@
             </tr>
         </table>
     </div>
-    
+
     <div class="slide" id="edit">
-       <a href="javascript:void(0)" class="closebtn" onclick="closeEdit()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeEdit()">&times;</a>
         <table cellpadding="0" cellspacing="5" class="auto-style1">
             <tr>
                 <td>Select Date</td>
             </tr>
             <tr>
-                <td><asp:DropDownList ID="DropDownList5" runat="server"></asp:DropDownList></td>
+                <td>
+                    <asp:DropDownList ID="DropDownList5" runat="server"></asp:DropDownList></td>
             </tr>
         </table>
 
@@ -112,14 +112,14 @@
     </div>
 
     <div id="Cal" onclick="openSlide()">
-    <asp:Calendar ID="Calendar1" runat="server" Width="100%" Height="450px" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" ShowGridLines="True">
-        <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
-        <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
-        <OtherMonthDayStyle ForeColor="#CC9966" />
-        <SelectedDayStyle BackColor="#CCCCFF" Font-Bold="True" />
-        <SelectorStyle BackColor="#FFCC66" />
-        <TitleStyle BackColor="#990000" Font-Bold="True" Font-Size="9pt" ForeColor="#FFFFCC" />
-        <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
+        <asp:Calendar ID="Calendar1" runat="server" Width="100%" Height="450px" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" ShowGridLines="True">
+            <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
+            <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
+            <OtherMonthDayStyle ForeColor="#CC9966" />
+            <SelectedDayStyle BackColor="#CCCCFF" Font-Bold="True" />
+            <SelectorStyle BackColor="#FFCC66" />
+            <TitleStyle BackColor="#990000" Font-Bold="True" Font-Size="9pt" ForeColor="#FFFFCC" />
+            <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
         </asp:Calendar>
     </div>
     <script>
