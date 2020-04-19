@@ -29,6 +29,7 @@
                       <asp:BoundField DataField="Implication" HeaderText="Implication" SortExpression="Implication" />
                       <asp:BoundField DataField="Severity" HeaderText="Severity" SortExpression="Severity" />
                       <asp:BoundField DataField="Recommendation" HeaderText="Recommendation" SortExpression="Recommendation" />
+                      <asp:HyperLinkField DataNavigateUrlFields="URL" DataTextField="Name" HeaderText="Read more" />
                   </Columns>
                   <FooterStyle BackColor="Tan" />
                   <HeaderStyle BackColor="Tan" Font-Bold="True" />
@@ -82,6 +83,7 @@
                       <asp:BoundField DataField="Orinetation" HeaderText="Orinetation" SortExpression="Orinetation" />
                       <asp:ImageField DataImageUrlField="Pic_Filename" HeaderText="Position Picture">
                       </asp:ImageField>
+                      <asp:HyperLinkField DataNavigateUrlFields="URL" DataTextField="Name" HeaderText="Read more" />
                   </Columns>
                   <FooterStyle BackColor="Tan" />
                   <HeaderStyle BackColor="Tan" Font-Bold="True" />
@@ -102,6 +104,7 @@
                       <asp:Parameter Name="Description" Type="String" />
                       <asp:Parameter Name="Orinetation" Type="String" />
                       <asp:Parameter Name="Pic_Filename" Type="String" />
+                      <asp:Parameter Name="URL" Type="String" />
                   </InsertParameters>
                   <SelectParameters>
                       <asp:ControlParameter ControlID="DropDownList2" Name="Name" PropertyName="SelectedValue" Type="String" />
@@ -111,6 +114,7 @@
                       <asp:Parameter Name="Description" Type="String" />
                       <asp:Parameter Name="Orinetation" Type="String" />
                       <asp:Parameter Name="Pic_Filename" Type="String" />
+                      <asp:Parameter Name="URL" Type="String" />
                       <asp:Parameter Name="Original_PositionID" Type="Int32" />
                   </UpdateParameters>
               </asp:ObjectDataSource>

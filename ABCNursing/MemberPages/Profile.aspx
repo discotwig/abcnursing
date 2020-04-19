@@ -38,28 +38,10 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.UserTableAdapter" UpdateMethod="Update">
+        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.UserTableAdapter" UpdateMethod="Update">
             <DeleteParameters>
                 <asp:Parameter Name="Original_UserID" Type="Int32" />
             </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="UserID" Type="Int32" />
-                <asp:Parameter Name="FirstName" Type="String" />
-                <asp:Parameter Name="LastName" Type="String" />
-                <asp:Parameter Name="DOB" Type="String" />
-                <asp:Parameter Name="Weight" Type="Decimal" />
-                <asp:Parameter Name="City" Type="String" />
-                <asp:Parameter Name="State" Type="String" />
-                <asp:Parameter Name="Zipcode" Type="String" />
-                <asp:Parameter Name="Phone" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="BabyID" Type="String" />
-                <asp:Parameter Name="Password" Type="String" />
-                <asp:Parameter Name="CreatedDate" Type="DateTime" />
-                <asp:Parameter Name="LastLoginDate" Type="DateTime" />
-                <asp:Parameter Name="Username" Type="String" />
-                <asp:Parameter Name="RoleID" Type="Int32" />
-            </InsertParameters>
             <UpdateParameters>
                 <asp:Parameter Name="FirstName" Type="String" />
                 <asp:Parameter Name="LastName" Type="String" />
@@ -79,6 +61,11 @@
                 <asp:Parameter Name="Original_UserID" Type="Int32" />
             </UpdateParameters>
         </asp:ObjectDataSource>
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MemberPages/Addeditbaby.aspx">Add a baby?</asp:HyperLink>
+        <br />
+        <br />
+        <br />
         <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" DataKeyNames="BabyID" DataSourceID="ObjectDataSource2" Height="99px" Width="402px">
             <Fields>
                 <asp:BoundField DataField="BabyID" HeaderText="BabyID" ReadOnly="True" SortExpression="BabyID" />
@@ -89,6 +76,7 @@
                 <asp:BoundField DataField="Weight" HeaderText="Weight" SortExpression="Weight" />
                 <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
         <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.BabyTableAdapter" UpdateMethod="Update">

@@ -11,8 +11,8 @@ Partial Class ABCNursingMasterPage
         Else
             lblUser.Text = <a href="/Login.aspx"> Log In</a>
             lblSignUp.Text = <a href="/Signup.aspx"> Sign Up</a>
-            lblEvents.Text = " "
-            lblAnalytics.Text = " "
+            lblEvents.Text = ""
+            lblAnalytics.Text = ""
         End If
 
         If (Context.User.IsInRole("Admin")) Then

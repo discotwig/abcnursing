@@ -53,9 +53,7 @@
         <tr>
             <td class="auto-style4">Eman Abdulmahdi</td>
             <td class="auto-style5">
-                There are hundreds of web apps give breastfeeding and baby adive to new moms, but are they any good? 
-                Breast milk helps keep your baby health because of that creating this web application to help Eman, her sisters, and other women for breastfeeding guidance. 
-                This web application will help mom to have somthing to look back to whenever she needs help.
+                Eman is a senior at Kennesaw State University majoring in Information System. She was born and raised in Iraq. She loves to travel and her dream to travel all over the world. She&#39;s an IT analyst at NCR corporation that designs and implement information systems that optimze the company efficiency. This website app means alot to her because breast milk helps keep your baby health.&nbsp;
             </td>
         </tr>
     </table>

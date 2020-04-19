@@ -5,6 +5,9 @@
         .auto-style1 {
             height: 23px;
         }
+        .auto-style2 {
+            margin-bottom: 0;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -19,12 +22,14 @@
                 <td>First Name</td>
                 <td>
                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Name is required"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td>Last Name</td>
                 <td>
                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Name is required"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -42,19 +47,21 @@
                 <td>DOB</td>
                 <td>
                     <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="DOB is required "></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="datatable">Weight</td>
                 <td class="datatable">
                     <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">Baby Picture</td>
                 <td class="auto-style2">
 
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <asp:FileUpload ID="FileField" runat="server" Size="60" CssClass="auto-style2" />
                     <br />
 
                     </td>
@@ -63,10 +70,19 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style2">
                     <br />
-                    <asp:Button ID="Button1" runat="server" Text="Button" />
+                    <asp:Button ID="Button1" runat="server" Text="Save" Height="35px" Width="66px" />
                     <br />
                     <br />
-                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                    <div id="UploadDetails" visible="false" runat="server">
+                        File Name: <span id="FileName" runat="server" />
+   <br />
+                        File Content:<span id="FileContent" runat="server" /><br />
+                        File Size: <span id="FileSize" runat="server" />
+                    </div>
+                    <span id="span1" style="color:red" runat="server" />
+                    <asp:Label ID="lblMessage" runat="server"></asp:Label>
+                    <br />
+                    <br />
                     </td>
             </tr>
         </table>
