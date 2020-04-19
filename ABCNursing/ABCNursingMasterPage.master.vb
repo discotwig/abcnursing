@@ -6,13 +6,13 @@ Partial Class ABCNursingMasterPage
         If (Context.User.Identity.IsAuthenticated) Then
             lblUser.Text = <a href="/Login.aspx">Sign Out</a>
             lblSignUp.Text = " "
-            lblEvents.Text = <a href="/MemberPages/Events.aspx">Events</a>
-            lblAnalytics.Text = <a href="/MemberPages/Analytics.aspx">Analytics</a>
+            'lblEvents.Text = <a href="/MemberPages/Events.aspx">Events</a>
+            'lblAnalytics.Text = <a href="/MemberPages/Analytics.aspx">Analytics</a>
         Else
             lblUser.Text = <a href="/Login.aspx"> Log In</a>
             lblSignUp.Text = <a href="/Signup.aspx"> Sign Up</a>
-            lblEvents.Text = ""
-            lblAnalytics.Text = ""
+            'lblEvents.Text = ""
+            'lblAnalytics.Text = ""
         End If
 
         If (Context.User.IsInRole("Admin")) Then

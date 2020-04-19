@@ -26,9 +26,10 @@
                     <a href="/Aboutus.aspx">About Us</a>
                     <a href="/Learn.aspx">Learn</a>
                     <!--Below links only show up if user is logged in-->
-                    <a href="/MemberPages/Events.aspx"><asp:Label ID="lblEvents" runat="server" Text=""></asp:Label></a>
-                    <a href="/MemberPages/Analytics.aspx"><asp:Label ID="lblAnalytics" runat="server" Text=""></asp:Label></a>
-                    
+                    <!--<a href="/MemberPages/Events.aspx"><asp:Label ID="lblEvents" runat="server" Text=""></asp:Label></a>-->
+                    <!--<a href="/MemberPages/Analytics.aspx"><asp:Label ID="lblAnalytics" runat="server" Text=""></asp:Label></a>-->
+                    <a href="/MemberPages/Events.aspx">Events</a>
+                    <a href="/MemberPages/Analytics.aspx">Analytics</a>
                 </div>
             </header>
             <main>
