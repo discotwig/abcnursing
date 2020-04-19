@@ -24,10 +24,10 @@
         ' Note: The Session_End event is raised only when the sessionstate mode
         ' is set to InProc in the Web.config file. If session mode is set to StateServer 
         ' or SQLServer, the event is not raised.
+    End Sub
 
-        ' Below was pasted from Login_Global_file.docx
-        ' Still needs to be retrofit
-
+    ' Below was pasted from Login_Global_file.docx
+    Protected Sub Application_AuthenticateRequest(sender As [Object], e As EventArgs)
         If HttpContext.Current.User IsNot Nothing Then
             If HttpContext.Current.User.Identity.IsAuthenticated Then
                 If TypeOf HttpContext.Current.User.Identity Is FormsIdentity Then
