@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/ABCNursingMasterPage.master" AutoEventWireup="false" CodeFile="AdminUserProfile.aspx.vb" Inherits="AdminUserProfile" %>
+﻿<%@ Page Title="Admin - Profile Management" Language="VB" MasterPageFile="~/ABCNursingMasterPage.master" AutoEventWireup="false" CodeFile="AdminUserProfile.aspx.vb" Inherits="AdminUserProfile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -34,7 +34,7 @@
         </table>
         <br />
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="402px" AutoGenerateRows="False" DataKeyNames="UserID" DataSourceID="ObjectDataSource2">
+        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="100%" AutoGenerateRows="False" DataKeyNames="UserID" DataSourceID="ObjectDataSource2">
             <Fields>
                 <asp:BoundField DataField="UserID" HeaderText="UserID" ReadOnly="True" SortExpression="UserID" />
                 <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />

@@ -95,10 +95,26 @@ main {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    border: dashed black;
 }
+
 
 .datatable {
      width: 100%;
      height: auto;
+}
+
+
+footer {
+    clear: both;
+    background-color: lightpink;
+    text-align: center;
+}
+
+footer a{
+    color:black;
+}
+
+footer a:hover {
+    text-decoration:underline black;
+    color: black;
 }

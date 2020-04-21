@@ -36,6 +36,10 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
             </main>
+            <footer>
+                <p><a href="/Default.aspx">Home</a> | <a href="/Aboutus.aspx">About Us</a> | <a href="/Learn.aspx">Learn</a> | <a href="Sitemap.aspx">Sitemap</a></p>
+                ABC Nursing &copy; 2020
+            </footer>
         </div>
     </form>
 </body>

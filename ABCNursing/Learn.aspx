@@ -3,18 +3,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
       <style type="text/css">
         .auto-style1 {
-            width: 62%;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
-            border: dashed black;
-              height: 724px;
           }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Learn&nbsp; </h1>
+    <h1>Learn </h1>
 </asp:Content>
       <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+          <br />
           <div class="auto-style1" id="dropdown1">
               Learn about different problems below:<br />
               <br />
@@ -173,6 +172,7 @@
 
 
 
-          </asp:Content>
+          </div>
+</asp:Content>
       
     
