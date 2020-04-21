@@ -18,6 +18,7 @@
                     <p>
                         <a href="/Login.aspx"><asp:Label ID="lblUser" runat="server" Text=""></asp:Label></a>
                         <a href="/Signup.aspx"><asp:Label ID="lblSignUp" runat="server" Text=""></asp:Label></a>
+                        <a href="/MemberPages/Profile.aspx"><asp:Label ID="lblProfile" runat="server" Text=""></asp:Label></a>
                         <a href="/AdminPages/AdminUserProfile.aspx"><asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label></a>
                     </p>
                 </aside>
@@ -30,7 +31,6 @@
                     <!--<a href="/MemberPages/Analytics.aspx"><asp:Label ID="lblAnalytics" runat="server" Text=""></asp:Label></a>-->
                     <a href="/MemberPages/Events.aspx">Events</a>
                     <a href="/MemberPages/Analytics.aspx">Analytics</a>
-                    <a href="/MemberPages/membertest.aspx">membertest</a>
                 </div>
             </header>
             <main>

@@ -29,7 +29,7 @@ Partial Class Login
             con.Open()
             Dim reader As SqlDataReader = cmd.ExecuteReader()
             reader.Read()
-            userId = Convert.ToInt32(reader("UserId"))
+            userId = Convert.ToInt32(reader("UserID"))
             roles = reader("Roles").ToString()
             con.Close()
         End Using

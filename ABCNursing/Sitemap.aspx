@@ -42,7 +42,8 @@
                 <a href="/MemberPages/Events.aspx">Events</a><br />
                 <a href="/MemberPages/Analytics.aspx">Analytics</a><br />
                 <a href="/MemberPages/Profile.aspx">Profile</a><br />
-                <a href="/MemberPages/Addeditbaby.aspx">Add Baby</a><br /></td>
+                <a href="/MemberPages/Addeditbaby.aspx">Add Baby</a><br />
+                <a href="/MemberPages/membertest.aspx">membertest</a><br /></td>
 
             <td class="auto-style4"><h3>Admin</h3><br />
                 <a href="/AdminPages/AdminReport.aspx">Report</a><br />

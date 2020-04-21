@@ -6,6 +6,7 @@ Partial Class ABCNursingMasterPage
         If (Context.User.Identity.IsAuthenticated) Then
             lblUser.Text = <a href="/Login.aspx">Sign Out</a>
             lblSignUp.Text = " "
+            lblProfile.Text = Context.User.Identity.Name
             'lblEvents.Text = <a href="/MemberPages/Events.aspx">Events</a>
             'lblAnalytics.Text = <a href="/MemberPages/Analytics.aspx">Analytics</a>
         Else

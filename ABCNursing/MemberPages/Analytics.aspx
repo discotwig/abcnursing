@@ -4,7 +4,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="server">
     <style type="text/css">
-
         .auto-style1 {
             width: 100%;
             margin-top: 5px;
