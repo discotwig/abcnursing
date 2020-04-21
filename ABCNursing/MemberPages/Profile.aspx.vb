@@ -1,19 +1,15 @@
 ﻿
 Partial Class Profile
     Inherits System.Web.UI.Page
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If Request.IsAuthenticated Then
-            Dim messege As String = "welcome"
-        Else
-            Response.Redirect("~/Redirect.aspx")
-        End If
-        ' Find if user is logged in
-        If (Context.User.Identity.IsAuthenticated) Then
-            ' Finds user name and says Hi
-            'lblWelcome.Text = "Hello Administrator " + Context.User.Identity.Name & ", welcome to the admin tools!"
-        Else
-            ' It is anonymous user, say hi to guest
-            'lblWelcome.Text = "ERROR"
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+        If Not Me.IsPostBack Then
+            If Me.Page.User.Identity.IsAuthenticated Then
+                FormsAuthentication.SignOut()
+                Response.Redirect("~/Login.aspx")
+            Else
+                Session.Abandon()
+                Session.Clear()
+            End If
         End If
     End Sub
 End Class
