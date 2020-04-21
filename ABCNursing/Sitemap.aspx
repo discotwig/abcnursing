@@ -31,32 +31,22 @@
     <div class="container">
     <table class="auto-style1">
         <tr>
-            <td class="auto-style2"><h3>Guest</h3><br />
+            <td class="auto-style2"><h3>Guests</h3><br />
                 <a href="Default.aspx">Home</a><br />
                 <a href="Aboutus.aspx">About Us</a><br />
                 <a href="Learn.aspx">Learn</a><br />
                 <a href="Login.aspx">Log in</a><br />
                 <a href="Signup.aspx">Sign up</a></td>
-            <td class="auto-style2"><h3>User</h3><br />
-                <a href="Default.aspx">Home</a><br />
-                <a href="Aboutus.aspx">About Us</a><br />
-                <a href="Learn.aspx">Learn</a><br />
-                <a href="Events.aspx">Events</a><br />
-                <a href="Analytics.aspx">Analytics</a><br />
-                <a href="Login.aspx">Log in</a><br />
-                <a href="Profile.aspx">Profile</a><br />
-                Add Baby</td>
+
+            <td class="auto-style2"><h3>Users</h3><br />
+                <a href="/MemberPages/Events.aspx">Events</a><br />
+                <a href="/MemberPages/Analytics.aspx">Analytics</a><br />
+                <a href="/MemberPages/Profile.aspx">Profile</a><br />
+                <a href="/MemberPages/Addeditbaby.aspx">Add Baby</a><br /></td>
+
             <td class="auto-style4"><h3>Admin</h3><br />
-                <a href="Default.aspx">Home</a><br />
-                <a href="Aboutus.aspx">About Us</a><br />
-                <a href="Learn.aspx">Learn</a><br />
-                <a href="Events.aspx">Events</a><br />
-                <a href="Analytics.aspx">Analytics</a><br />
-                <a href="Login.aspx">Log in</a><br />
-                <a href="Signup.aspx">Sign up</a><br />
-                <a href="Profile.aspx">Profile</a><br />
-                <a href="AdminReport.aspx">Report</a><br />
-                <a href="AdminUserProfile.aspx">Manage Profile</a></td>
+                <a href="/AdminPages/AdminReport.aspx">Report</a><br />
+                <a href="/AdminPages/AdminUserProfile.aspx">Manage Profile</a></td>
         </tr>
     </table>
         </div>

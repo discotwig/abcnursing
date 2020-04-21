@@ -13,7 +13,7 @@ Partial Class SignUp
                     cmd.CommandType = CommandType.StoredProcedure
                     cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim())
                     cmd.Parameters.AddWithValue("@Password", txtPass.Text.Trim())
-                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim)
+                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim())
                     cmd.Connection = con
                     con.Open()
                     userId = Convert.ToInt32(cmd.ExecuteScalar())

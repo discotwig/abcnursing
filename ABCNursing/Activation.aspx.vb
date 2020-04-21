@@ -17,7 +17,7 @@ Partial Class Activation
                         con.Close()
                         If rowsAffected = 1 Then
                             lblMessage.Text = "Activation Has Been Successful!"
-                            lblLogIn.Text = <a href="/LogIn.aspx">Log In</a>
+                            lblLogIn.Text = <a href="/Login.aspx">Log In</a>
                         Else
                             lblMessage.Text = "Error, Invalid Activation Code."
                             lblLogIn.Text = " "

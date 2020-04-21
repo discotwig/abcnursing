@@ -1,16 +1,16 @@
 ﻿<%@ Page Title="Events" Language="VB" MasterPageFile="~/ABCNursingMasterPage.master" AutoEventWireup="false" CodeFile="Events.aspx.vb" Inherits="Events" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 100%;
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Events</h1>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <div class="slide" id="slide">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSlide()">&times;</a>
         <a href="javascript:void(0)" onclick="openAdd()">Add</a>
@@ -20,7 +20,7 @@
     <div class="slide" id="add">
         <a href="javascript:void(0)" class="closebtn" onclick="closeAdd()">&times;</a>
 
-        <table cellpadding="0" cellspacing="5" class="auto-style1">
+        <table class="auto-style1">
             <tr>
                 <td>Baby</td>
             </tr>
@@ -82,7 +82,7 @@
 
     <div class="slide" id="edit">
         <a href="javascript:void(0)" class="closebtn" onclick="closeEdit()">&times;</a>
-        <table cellpadding="0" cellspacing="5" class="auto-style1">
+        <table class="auto-style1">
             <tr>
                 <td>Select Date</td>
             </tr>

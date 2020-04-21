@@ -2,7 +2,7 @@
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="server">
     <style type="text/css">
 
         .auto-style1 {
@@ -19,13 +19,13 @@
         }
         </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="server">
     <h1>
         Analytics</h1>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="server">
 
-    <table class="auto-style1" cellspacing="10">
+    <table class="auto-style1">
         <tr>
             <td class="auto-style2">Baby</td>
             <td class="auto-style3">

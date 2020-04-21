@@ -30,6 +30,7 @@
                     <!--<a href="/MemberPages/Analytics.aspx"><asp:Label ID="lblAnalytics" runat="server" Text=""></asp:Label></a>-->
                     <a href="/MemberPages/Events.aspx">Events</a>
                     <a href="/MemberPages/Analytics.aspx">Analytics</a>
+                    <a href="/MemberPages/membertest.aspx">membertest</a>
                 </div>
             </header>
             <main>

@@ -49,6 +49,7 @@ Partial Class Login
                 End If
                 Response.Cookies.Add(cookie)
                 Response.Redirect(FormsAuthentication.GetRedirectUrl(Login1.UserName, Login1.RememberMeSet))
+
                 Exit Select
         End Select
     End Sub
