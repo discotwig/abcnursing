@@ -2,19 +2,8 @@
 Partial Class Addbaby
     Inherits System.Web.UI.Page
     Dim cn As New Data.SqlClient.SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
-    Protected Overrides Sub Finalize()
-        MyBase.Finalize()
-    End Sub
+
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        If Not Me.IsPostBack Then
-            If Me.Page.User.Identity.IsAuthenticated Then
-                FormsAuthentication.SignOut()
-                Response.Redirect("~/Login.aspx")
-            Else
-                Session.Abandon()
-                Session.Clear()
-            End If
-        End If
 
         Dim UpPath As String
         Dim UpName As String
