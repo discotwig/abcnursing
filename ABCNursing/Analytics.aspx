@@ -28,8 +28,13 @@
         <tr>
             <td class="auto-style2">Baby</td>
             <td class="auto-style3">
-                <asp:DropDownList ID="DropDownList8" runat="server" AutoPostBack="True">
+                <asp:DropDownList ID="DropDownList8" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource4" DataTextField="FirstName" DataValueField="FirstName">
                 </asp:DropDownList>
+                <asp:ObjectDataSource ID="ObjectDataSource4" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.UsersBabyTableAdapter">
+                    <SelectParameters>
+                        <asp:Parameter DefaultValue="1" Name="UserID" Type="Int32" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
             </td>
             <td class="auto-style17"></td>
             <td class="auto-style17">
@@ -74,7 +79,7 @@
             <td class="auto-style3">
                 <asp:DropDownList ID="DropDownList5" runat="server" AutoPostBack="True" DataSourceID="ObjectDataSource2" DataTextField="Name" DataValueField="Name">
                 </asp:DropDownList>
-                <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetName" TypeName="DataSetTableAdapters.ProblemListTableAdapter"></asp:ObjectDataSource>
+                <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetName" TypeName="DataSetTableAdapters.ProblemsListTableAdapter"></asp:ObjectDataSource>
             </td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style3">&nbsp;</td>

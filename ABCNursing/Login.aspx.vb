@@ -8,7 +8,7 @@ Partial Class Login
         If Not Me.IsPostBack Then
             If Me.Page.User.Identity.IsAuthenticated Then
                 FormsAuthentication.SignOut()
-                Response.Redirect("~/Login.aspx")
+                Response.Redirect("~/Login.aspx", False)
             Else
                 Session.Abandon()
                 Session.Clear()
@@ -48,7 +48,7 @@ Partial Class Login
                     cookie.Expires = ticket.Expiration
                 End If
                 Response.Cookies.Add(cookie)
-                Response.Redirect(FormsAuthentication.GetRedirectUrl(Login1.UserName, Login1.RememberMeSet))
+                Response.Redirect(FormsAuthentication.GetRedirectUrl(Login1.UserName, Login1.RememberMeSet), False)
 
                 Exit Select
         End Select
