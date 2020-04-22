@@ -2,9 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -99,30 +97,26 @@
             </tr>
         </table>
 
-        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="ObjectDataSource1">
+        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" AutoGenerateRows="False" DataKeyNames="EventID" DataSourceID="ObjectDataSource1">
             <Fields>
-                <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                <asp:BoundField DataField="EventID" HeaderText="EventID" ReadOnly="True" SortExpression="EventID" InsertVisible="False" />
+                <asp:BoundField DataField="MotherID" HeaderText="MotherID" SortExpression="MotherID" />
+                <asp:BoundField DataField="BabyID" HeaderText="BabyID" SortExpression="BabyID" />
+                <asp:BoundField DataField="MoodID" HeaderText="MoodID" SortExpression="MoodID" />
+                <asp:BoundField DataField="PositionID" HeaderText="PositionID" SortExpression="PositionID" />
+                <asp:BoundField DataField="ProblemID" HeaderText="ProblemID" SortExpression="ProblemID" />
+                <asp:BoundField DataField="Timstamps" HeaderText="Timstamps" SortExpression="Timstamps" />
             </Fields>
         </asp:DetailsView>
 
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.EventTableAdapter" UpdateMethod="Update">
-            <DeleteParameters>
-                <asp:Parameter Name="Original_Id" Type="Int32" />
-            </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="Id" Type="Int32" />
-            </InsertParameters>
-            <UpdateParameters>
-                <asp:Parameter Name="Original_Id" Type="Int32" />
-            </UpdateParameters>
+        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.EventTableAdapter">
         </asp:ObjectDataSource>
         
     </div>
 
     <!--Calender Object-->
     <div id="Cal" onclick="openSlide()">
-        <asp:Calendar ID="Calendar1" runat="server" Width="100%" Height="450px" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" ShowGridLines="True">
+        <asp:Calendar ID="Calendar1" runat="server" Width="100%" Height="450px" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" ShowGridLines="True" CssClass="auto-style2" style="margin-right: 0">
             <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
             <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
             <OtherMonthDayStyle ForeColor="#CC9966" />
