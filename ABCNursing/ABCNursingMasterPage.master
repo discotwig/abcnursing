@@ -18,8 +18,8 @@
                     <p>
                         <a href="/Login.aspx"><asp:Label ID="lblUser" runat="server" Text=""></asp:Label></a>
                         <a href="/Signup.aspx"><asp:Label ID="lblSignUp" runat="server" Text=""></asp:Label></a>
-                        <a href="/MemberPages/Profile.aspx"><asp:Label ID="lblProfile" runat="server" Text=""></asp:Label></a>
-                        <a href="/AdminPages/AdminUserProfile.aspx"><asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label></a>
+                        <a href="/Profile.aspx"><asp:Label ID="lblProfile" runat="server" Text=""></asp:Label></a>
+                        <a href="/AdminUserProfile.aspx"><asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label></a>
                     </p>
                 </aside>
                 <div id="nav">
@@ -29,8 +29,8 @@
                     <!--Below links only show up if user is logged in-->
                     <!--<a href="/MemberPages/Events.aspx"><asp:Label ID="lblEvents" runat="server" Text=""></asp:Label></a>-->
                     <!--<a href="/MemberPages/Analytics.aspx"><asp:Label ID="lblAnalytics" runat="server" Text=""></asp:Label></a>-->
-                    <a href="/MemberPages/Events.aspx">Events</a>
-                    <a href="/MemberPages/Analytics.aspx">Analytics</a>
+                    <a href="/Events.aspx">Events</a>
+                    <a href="/Analytics.aspx">Analytics</a>
                 </div>
             </header>
             <main>
@@ -38,7 +38,7 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
             </main>
             <footer>
-                <p><a href="/Default.aspx">Home</a> | <a href="/Aboutus.aspx">About Us</a> | <a href="/Learn.aspx">Learn</a> | <a href="Sitemap.aspx">Sitemap</a></p>
+                <p><a href="/Default.aspx">Home</a> | <a href="/Aboutus.aspx">About Us</a> | <a href="/Learn.aspx">Learn</a> | <a href="/Sitemap.aspx">Sitemap</a></p>
                 ABC Nursing &copy; 2020
             </footer>
         </div>
