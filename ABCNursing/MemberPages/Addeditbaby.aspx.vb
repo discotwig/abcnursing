@@ -21,7 +21,7 @@ Partial Class Addbaby
         UpPath = "C:\UploadUserFiles"
         UpName = Dir(UpPath, vbDirectory)
         If (UpName = "") Then
-            MkDir("C:\UploadUserFiles")
+            MkDir("C:\UploadUserFiles\")
         End If
     End Sub
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -41,7 +41,7 @@ Partial Class Addbaby
         Dim c As String = System.IO.Path.GetFileName(myFileName)
 
         Try
-            FileField.PostedFile.SaveAs("C:\UploadUserFiles\" + c)
+            FileField.PostedFile.SaveAs("C:\UploadUserFiles\")
             span1.InnerHtml = "File Uploaded Successful."
 
             UploadDetails.Visible = False

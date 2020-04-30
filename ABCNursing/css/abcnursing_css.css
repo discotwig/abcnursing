@@ -74,7 +74,7 @@ main {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: darkgrey;
     display: block;
     transition: 0.3s;
 }
@@ -95,6 +95,7 @@ main {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    height: 700px;
 }
 
 
@@ -117,4 +118,8 @@ footer a{
 footer a:hover {
     text-decoration:underline black;
     color: black;
+}
+
+.content {
+    height: 700px;
 }

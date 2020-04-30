@@ -6,9 +6,11 @@
     <h1 style="text-align: center;">Activation</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+    <div class="content">
     <div style="text-align: center;">
     <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
     <asp:Label ID="lblLogIn" runat="server" Text="Label"></asp:Label>
+        </div>
         </div>
 </asp:Content>
 

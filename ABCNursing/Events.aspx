@@ -27,22 +27,34 @@
             </tr>
             <tr>
                 <td>
-                    <asp:DropDownList ID="ddlBaby" runat="server"></asp:DropDownList></td>
-            </tr>
-            <tr>
-                <td>Date</td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Label ID="lblDate" runat="server" Text=""></asp:Label></td>
+                    <asp:DropDownList ID="ddlBaby" runat="server">
+                        <asp:ListItem>Sam</asp:ListItem>
+                    </asp:DropDownList></td>
             </tr>
             <tr>
                 <td>Start Time</td>
             </tr>
             <tr>
                 <td>
-                    <asp:DropDownList ID="ddlHourStart" runat="server"></asp:DropDownList>
-                    <asp:DropDownList ID="ddlAMPMStart" runat="server"></asp:DropDownList></td>
+                    <asp:DropDownList ID="ddlHourStart" runat="server">
+                        <asp:ListItem>12:00</asp:ListItem>
+                        <asp:ListItem>1:00</asp:ListItem>
+                        <asp:ListItem>2:00</asp:ListItem>
+                        <asp:ListItem>3:00</asp:ListItem>
+                        <asp:ListItem>4:00</asp:ListItem>
+                        <asp:ListItem>5:00</asp:ListItem>
+                        <asp:ListItem>6:00</asp:ListItem>
+                        <asp:ListItem>7:00</asp:ListItem>
+                        <asp:ListItem>8:00</asp:ListItem>
+                        <asp:ListItem>9:00</asp:ListItem>
+                        <asp:ListItem>10:00</asp:ListItem>
+                        <asp:ListItem>11:00</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:RadioButtonList ID="radioAMPMStart" runat="server">
+                        <asp:ListItem>AM</asp:ListItem>
+                        <asp:ListItem>PM</asp:ListItem>
+                    </asp:RadioButtonList>
+                </td>
                     
             </tr>
             <tr>
@@ -50,29 +62,82 @@
             </tr>
             <tr>
                 <td>
-                    <asp:DropDownList ID="ddlHourEnd" runat="server"></asp:DropDownList>
-                    <asp:DropDownList ID="ddlAMPMEnd" runat="server"></asp:DropDownList></td>
+                    <asp:DropDownList ID="ddlHourEnd" runat="server">
+                        <asp:ListItem>12:00</asp:ListItem>
+                        <asp:ListItem>1:00</asp:ListItem>
+                        <asp:ListItem>2:00</asp:ListItem>
+                        <asp:ListItem>3:00</asp:ListItem>
+                        <asp:ListItem>4:00</asp:ListItem>
+                        <asp:ListItem>5:00</asp:ListItem>
+                        <asp:ListItem>6:00</asp:ListItem>
+                        <asp:ListItem>7:00</asp:ListItem>
+                        <asp:ListItem>8:00</asp:ListItem>
+                        <asp:ListItem>9:00</asp:ListItem>
+                        <asp:ListItem>10:00</asp:ListItem>
+                        <asp:ListItem>11:00</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:RadioButtonList ID="radioAMPMEnd" runat="server">
+                        <asp:ListItem>AM</asp:ListItem>
+                        <asp:ListItem>PM</asp:ListItem>
+                    </asp:RadioButtonList>
+                </td>
             </tr>
             <tr>
                 <td>Baby's Mood</td>
             </tr>
             <tr>
                 <td>
-                    <asp:DropDownList ID="ddlMood" runat="server"></asp:DropDownList></td>
+                    <asp:DropDownList ID="chkMood" runat="server">
+                        <asp:ListItem>Happy</asp:ListItem>
+                        <asp:ListItem>Sad</asp:ListItem>
+                        <asp:ListItem>Crying</asp:ListItem>
+                        <asp:ListItem>Teething</asp:ListItem>
+                        <asp:ListItem>Fretful</asp:ListItem>
+                        <asp:ListItem>Sleeping</asp:ListItem>
+                        <asp:ListItem>Anger</asp:ListItem>
+                        <asp:ListItem>Depression</asp:ListItem>
+                        <asp:ListItem>Homesick</asp:ListItem>
+                        <asp:ListItem>Agitation</asp:ListItem>
+                    </asp:DropDownList></td>
             </tr>
             <tr>
                 <td>Position</td>
             </tr>
             <tr>
                 <td>
-                    <asp:DropDownList ID="ddlPosition" runat="server"></asp:DropDownList></td>
+                <asp:DropDownList ID="chkPosition" runat="server">
+                        <asp:ListItem>Laid-back</asp:ListItem>
+                        <asp:ListItem>Cradle Hold</asp:ListItem>
+                        <asp:ListItem>Cross-Cradle Hold</asp:ListItem>
+                        <asp:ListItem>Rugby Ball Hold</asp:ListItem>
+                        <asp:ListItem>Side-Lying</asp:ListItem>
+                        <asp:ListItem>Dancer Hand</asp:ListItem>
+                        <asp:ListItem>Nursing in a Sling</asp:ListItem>
+                        <asp:ListItem>Dangle Feeding</asp:ListItem>
+                        <asp:ListItem>Upright</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                </asp:DropDownList></td>
             </tr>
             <tr>
                 <td>Problems</td>
             </tr>
             <tr>
                 <td>
-                    <asp:DropDownList ID="ddlProblems" runat="server"></asp:DropDownList></td>
+                    <asp:DropDownList ID="chkProblems" runat="server">
+                        <asp:ListItem>None</asp:ListItem>
+                        <asp:ListItem>Breast Engorgment</asp:ListItem>
+                        <asp:ListItem>Leaking Breasts</asp:ListItem>
+                        <asp:ListItem>Mastitis</asp:ListItem>
+                        <asp:ListItem>Weak Latch</asp:ListItem>
+                        <asp:ListItem>Mouth Problems</asp:ListItem>
+                        <asp:ListItem>Poor Milk Supply</asp:ListItem>
+                        <asp:ListItem>Flat or Inverted Nipples</asp:ListItem>
+                        <asp:ListItem>Sore or Burning Nipples</asp:ListItem>
+                        <asp:ListItem>Nipple Confusion</asp:ListItem>
+                        <asp:ListItem>Plugged Milk Ducts</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
             </tr>
             <tr>
                 <td>Comments</td>
@@ -80,6 +145,12 @@
             <tr>
                 <td>
                     <asp:TextBox ID="txtComments" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" /></td>
+                <td>
+                    <asp:Button ID="btnClear" runat="server" Text="Clear" /></td>
             </tr>
         </table>
     </div>
@@ -93,24 +164,12 @@
             </tr>
             <tr>
                 <td>
-                    <asp:DropDownList ID="ddlSelectDateEdit" runat="server"></asp:DropDownList></td>
+                    <asp:DropDownList ID="ddlSelectDateEdit" runat="server">
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>21</asp:ListItem>
+                    </asp:DropDownList></td>
             </tr>
         </table>
-
-        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" AutoGenerateRows="False" DataKeyNames="EventID" DataSourceID="ObjectDataSource1">
-            <Fields>
-                <asp:BoundField DataField="EventID" HeaderText="EventID" ReadOnly="True" SortExpression="EventID" InsertVisible="False" />
-                <asp:BoundField DataField="MotherID" HeaderText="MotherID" SortExpression="MotherID" />
-                <asp:BoundField DataField="BabyID" HeaderText="BabyID" SortExpression="BabyID" />
-                <asp:BoundField DataField="MoodID" HeaderText="MoodID" SortExpression="MoodID" />
-                <asp:BoundField DataField="PositionID" HeaderText="PositionID" SortExpression="PositionID" />
-                <asp:BoundField DataField="ProblemID" HeaderText="ProblemID" SortExpression="ProblemID" />
-                <asp:BoundField DataField="Timstamps" HeaderText="Timstamps" SortExpression="Timstamps" />
-            </Fields>
-        </asp:DetailsView>
-
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="DataSetTableAdapters.EventTableAdapter">
-        </asp:ObjectDataSource>
         
     </div>
 

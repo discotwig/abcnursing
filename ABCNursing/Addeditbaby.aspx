@@ -8,6 +8,9 @@
         .auto-style2 {
             margin-bottom: 0;
         }
+        .auto-style3 {
+            margin-top: 0;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -70,7 +73,9 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style2">
                     <br />
-                    <asp:Button ID="Button1" runat="server" Text="Save" Height="35px" Width="66px" />
+                    &nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Save" CssClass="auto-style3" Height="36px" Width="76px" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" Text="Clear" CssClass="auto-style3" Height="36px" Width="76px" />
                     <br />
                     <br />
                     <div id="UploadDetails" visible="false" runat="server">
